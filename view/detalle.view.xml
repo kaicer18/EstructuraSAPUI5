@@ -1,0 +1,54 @@
+<mvc:View
+	controllerName="sap.ui.sta.controller.Detalle"
+	xmlns:l="sap.ui.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m">
+    <Page title="Detalle"
+          showNavButton = "true"
+          navButtonPress="onNavBack">
+        <content>
+        	<Table id="idTblDetalle">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="Detalle Documento de materiales" level="H2"/>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="12em">
+						<Text text="Posicion"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Material"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End">
+						<Text text="Cantidad"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem>
+						<cells>
+							<Text text="00001"/>
+						</cells>
+						<cells>
+							<Text text="HP"/>
+						</cells>
+						<cells>
+							<Text text="10"/>
+						</cells>
+					</ColumnListItem>
+					<ColumnListItem>
+						<cells>
+							<Text text="0002"/>
+						</cells>
+						<cells>
+							<Text text="Lenovo"/>
+						</cells>
+						<cells>
+							<Text text="10"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+        </content>        
+    </Page>
+</mvc:View>

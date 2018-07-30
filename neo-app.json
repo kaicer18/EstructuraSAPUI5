@@ -1,0 +1,14 @@
+{
+  "welcomeFile": "/index.html",
+  "routes": [
+    {
+      "path": "/ODP",
+      "target": {
+        "type": "destination",
+        "name": "ODP"
+      },
+      "description": "ODP"
+    }
+  ],
+  "sendWelcomeFileRedirect": true
+}

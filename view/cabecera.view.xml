@@ -1,0 +1,48 @@
+<mvc:View controllerName="sap.ui.sta.controller.Cabecera" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m">
+	<Page title="Cabecera">
+		<content>
+			<Table id="idTblCabecera" itemPress="onDetalle">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="Cabecera Documento de materiales" level="H2"/>
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="12em">
+						<Text text="Nro Doc"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true">
+						<Text text="Descripcion documento"/>
+					</Column>
+					<Column minScreenWidth="Tablet" demandPopin="true" hAlign="End">
+						<Text text="Cantidad"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Active">
+						<cells>
+							<Text text="00001"/>
+						</cells>
+						<cells>
+							<Text text="compra de t lap"/>
+						</cells>
+						<cells>
+							<Text text="10"/>
+						</cells>
+					</ColumnListItem>
+					<ColumnListItem>
+						<cells>
+							<Text text="00002"/>
+						</cells>
+						<cells>
+							<Text text="compra de t lap"/>
+						</cells>
+						<cells>
+							<Text text="10"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+	</Page>
+</mvc:View>
